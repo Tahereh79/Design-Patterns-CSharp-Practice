@@ -1,0 +1,17 @@
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/bin/Debug/net7.0/SRPExample
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/bin/Debug/net7.0/SRPExample.deps.json
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/bin/Debug/net7.0/SRPExample.runtimeconfig.json
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/bin/Debug/net7.0/SRPExample.dll
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/bin/Debug/net7.0/SRPExample.pdb
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/SRPExample.csproj.AssemblyReference.cache
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/SRPExample.GeneratedMSBuildEditorConfig.editorconfig
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/SRPExample.AssemblyInfoInputs.cache
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/SRPExample.AssemblyInfo.cs
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/SRPExample.csproj.CoreCompileInputs.cache
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/SRPExample.csproj.CopyComplete
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/SRPExample.dll
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/refint/SRPExample.dll
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/SRPExample.pdb
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/SRPExample.genruntimeconfig.cache
+/Users/taherehrastegarzare/Desktop/myrepo/Design-Patterns-using-C-and-.NET-Core/Section 1/1.2/SRPExample/obj/Debug/net7.0/ref/SRPExample.dll

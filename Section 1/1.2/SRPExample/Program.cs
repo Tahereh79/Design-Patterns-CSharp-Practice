@@ -8,7 +8,6 @@ namespace SRPExample
         static void Main(string[] args)
         {
             testCountries().Wait();
-            Console.ReadKey();
         }
 
         private async static Task testCountries()

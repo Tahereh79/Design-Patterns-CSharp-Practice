@@ -1,84 +1,62 @@
 ﻿using System;
-using System.Net.Http;
-using System.Net;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using System.Collections.Generic;
 
 namespace SRPExample
 {
     class CountriesManager
     {
-        private HttpClient _http;
         private Country[] _countries;
 
         public CountriesManager()
         {
-            _http = new HttpClient();
+            // Sample data (original app used restcountries.eu API which is no longer available)
+            _countries = new Country[]
+            {
+                new Country { Name = "Germany", Capital = "Berlin", Region = "Europe" },
+                new Country { Name = "France", Capital = "Paris", Region = "Europe" },
+                new Country { Name = "Spain", Capital = "Madrid", Region = "Europe" },
+                new Country { Name = "Italy", Capital = "Rome", Region = "Europe" },
+                new Country { Name = "United Kingdom", Capital = "London", Region = "Europe" },
+                new Country { Name = "Netherlands", Capital = "Amsterdam", Region = "Europe" },
+                new Country { Name = "Sweden", Capital = "Stockholm", Region = "Europe" },
+                new Country { Name = "Japan", Capital = "Tokyo", Region = "Asia" },
+                new Country { Name = "China", Capital = "Beijing", Region = "Asia" },
+                new Country { Name = "India", Capital = "New Delhi", Region = "Asia" },
+                new Country { Name = "Brazil", Capital = "Brasília", Region = "Americas" },
+                new Country { Name = "Nigeria", Capital = "Abuja", Region = "Africa" },
+            };
         }
 
-        public async Task<Country[]> GetCountries()
+        public Task<Country[]> GetCountries()
         {
-            if(_countries != null)
-            {
-                return _countries;
-            }
-            else
-            {
-                await GetAll();
-                return _countries;
-            }
+            return Task.FromResult(_countries);
         }
 
-        public async Task<Country[]> GetEuropeanCountries()
+        public Task<Country[]> GetEuropeanCountries()
         {
-            if(_countries != null)
+            List<Country> europeanCountries = new List<Country>();
+            foreach(var country in _countries)
             {
-                List<Country> europeanCountries = new List<Country>();
-                foreach(var country in _countries)
+                if(country.Region == "Europe")
                 {
-                    if(country.Region == "Europe")
-                    {
-                        europeanCountries.Add(country);
-                    }
+                    europeanCountries.Add(country);
                 }
-                return europeanCountries.ToArray();
             }
-            else
-            {
-                await GetAll();
-                return await GetEuropeanCountries();
-            }
+            return Task.FromResult(europeanCountries.ToArray());
         }
 
-        public async Task<Country[]> GetAsianCountries()
+        public Task<Country[]> GetAsianCountries()
         {
-            if(_countries != null)
+            List<Country> asianCountries = new List<Country>();
+            foreach(var country in _countries)
             {
-                List<Country> asianCountries = new List<Country>();
-                foreach(var country in _countries)
+                if(country.Region == "Asia")
                 {
                     asianCountries.Add(country);
                 }
-                return asianCountries.ToArray();
             }
-            else
-            {
-                await GetAll();
-                return await GetAsianCountries();
-            }
+            return Task.FromResult(asianCountries.ToArray());
         }
-
-        public async Task GetAll()
-        {
-            HttpResponseMessage response = await _http.GetAsync("https://restcountries.eu/rest/v2/all");
-            if(ErrorHandler.HandleResponse(response.StatusCode))
-            {
-                var content = await response.Content.ReadAsStringAsync();
-                _countries = JsonConvert.DeserializeObject<Country[]>(content);
-            }
-        }
-
-      
     }
 }
