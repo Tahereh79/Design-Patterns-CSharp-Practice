@@ -8,7 +8,6 @@ namespace LSPExample
         {
             Quiz quiz = new Quiz();
             quiz.ShowQuestions(quiz.TrueFalseQuestions);
-            Console.ReadKey();
         }
     }
 }
